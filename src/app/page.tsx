@@ -1,11 +1,11 @@
-// import Image from "next/image";
+import Header from "./components/header";
+import HomeM from "./pages/home";
 
 export default function Home() {
   return (
-    <div className="">
-      <main className="">
-    
-      </main>
-    </div>
+    <main className="h-screen flex flex-col bg-black text-white">
+      <Header />
+      <HomeM />
+    </main>
   );
 }

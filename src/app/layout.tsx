@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Pap from "./components/pap";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -13,10 +14,8 @@ export default function RootLayout({
 }>) {
   return (
     <html>
-      <body
-        className=""
-      >
-        {children}
+      <body className="">
+        <Pap>{children}</Pap>
       </body>
     </html>
   );
